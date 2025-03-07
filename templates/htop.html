@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTop Information</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+    <h1>HTop Information</h1>
+    <p><strong>Name:</strong> Your Full Name</p>
+    <p><strong>Username:</strong> {{ username }}</p>
+    <p><strong>Server Time (IST):</strong> {{ ist_time }}</p>
+    <h2>System Usage:</h2>
+    <p><strong>CPU Usage:</strong> {{ cpu_usage }}%</p>
+    <p><strong>Memory Usage:</strong> {{ memory_usage }}%</p>
+</body>
+
+</html>
